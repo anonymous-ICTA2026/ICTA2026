@@ -18,8 +18,8 @@ from utils import (
 # ============================================================
 # 0) CONFIGURATION
 # ============================================================
-ROOT = "/content/drive/MyDrive/PPI_STRING"
-TARGET = "BLCA"
+ROOT = "..."
+TARGET = "BRCA"
 
 CANCERS = [
     "BRCA",
