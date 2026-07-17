@@ -8,24 +8,7 @@ PRISM is a graph neural network framework for cancer driver gene prioritization 
 
 ![PRISM framework](PRISM_architecture.png)
 
-PRISM consists of four major stages:
-
-PRISM consists of four major stages:
-
-1. **Reference Graph Encoding**
-   - A high-confidence PPI network from ConsensusPathDB (CPDB) is used as the shared biological backbone.
-
-2. **Patient-specific Graph Learning**
-   - Patient-specific gene interaction graphs are constructed from scRNA-seq data using CellPhoneDB.
-   - A shared graph encoder extracts representations from both the reference PPI network and individual patient graphs.
-
-3. **Auxiliary Multi-cancer Pretraining**
-   - The shared encoder is pretrained on multiple non-target cancer types to learn transferable biological knowledge.
-
-4. **Target-specific Fine-tuning**
-   - The pretrained model is fine-tuned on the target cancer to prioritize candidate driver genes.
-
----
+PRISM employs a shared graph encoder to jointly learn representations from a reference CPDB protein–protein interaction network and patient-specific gene interaction graphs constructed from scRNA-seq data. The encoder is pretrained on multiple non-target cancer types to learn transferable biological knowledge and is subsequently fine-tuned on the target cancer for driver gene prioritization.
 
 ## Requirements
 
