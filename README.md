@@ -6,11 +6,9 @@ PRISM is a graph neural network framework for cancer driver gene prioritization 
 
 ## Model Framework
 
-> Place the framework figure in the repository root and name it **PRISM_architecture.png**.
-
-```markdown
 ![PRISM framework](PRISM_architecture.png)
-```
+
+PRISM consists of four major stages:
 
 PRISM consists of four major stages:
 
