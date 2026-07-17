@@ -37,8 +37,8 @@ from sklearn.model_selection import StratifiedKFold
 # ============================================================
 # 0) CONFIGURATION
 # ============================================================
-ROOT = "/content/drive/MyDrive/PPI_STRING"
-TARGET = "CESC"
+ROOT = "..."
+TARGET = "BRCA"
 
 PRETRAIN_CHECKPOINT_EPOCH = 150
 
